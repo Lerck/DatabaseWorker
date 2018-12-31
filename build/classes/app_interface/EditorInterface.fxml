@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="329.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app_interface.EditorInterfaceController">
+   <children>
+      <SplitPane dividerPositions="0.48322147651006714" prefHeight="251.0" prefWidth="300.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="249.0" prefWidth="151.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <Label fx:id="labelFirst" layoutX="14.0" layoutY="36.0" text="Label" />
+                  <Label fx:id="labelSecond" layoutX="14.0" layoutY="76.0" text="Label" />
+                  <Label fx:id="labelThird" layoutX="14.0" layoutY="116.0" text="Label" />
+                  <Label fx:id="labelFourth" layoutX="14.0" layoutY="156.0" text="Label" />
+                  <Label fx:id="labelFifth" layoutX="14.0" layoutY="196.0" text="Label" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextField fx:id="textFieldFirst" layoutX="17.0" layoutY="32.0" prefHeight="25.0" prefWidth="112.0" />
+                  <TextField fx:id="textFieldSecond" layoutX="17.0" layoutY="72.0" prefHeight="25.0" prefWidth="112.0" />
+                  <TextField fx:id="textFieldThird" layoutX="17.0" layoutY="112.0" prefHeight="25.0" prefWidth="112.0" />
+                  <TextField fx:id="textFieldFourth" layoutX="17.0" layoutY="152.0" prefHeight="25.0" prefWidth="112.0" />
+                  <TextField fx:id="textFieldFifth" layoutX="17.0" layoutY="192.0" prefHeight="25.0" prefWidth="112.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Button fx:id="buttonQuit" layoutX="50.0" layoutY="273.0" mnemonicParsing="false" onAction="#buttonQuitAction" text="Выйти" />
+      <Button fx:id="buttonSave" layoutX="185.0" layoutY="273.0" mnemonicParsing="false" onAction="#buttonSaveAction" prefHeight="25.0" prefWidth="76.0" text="Сохранить" />
+      <Button fx:id="buttonAdd" layoutX="185.0" layoutY="273.0" mnemonicParsing="false" onAction="#buttonAddAction" prefHeight="25.0" prefWidth="76.0" text="Добавить" />
+   </children>
+</AnchorPane>

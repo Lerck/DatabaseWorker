@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app_interface.WorkerInterfaceController">
+  <tabs>
+    <Tab text="Магазин">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="buttonStoreInsert" layoutX="472.0" layoutY="140.0" mnemonicParsing="false" onAction="#buttonStoreInsertAction" text="INSERT" />
+                  <Button fx:id="buttonStoreUpdate" layoutX="470.0" layoutY="175.0" mnemonicParsing="false" onAction="#buttonStoreUpdateAction" text="UPDATE" />
+                  <Button fx:id="buttonStoreDelete" layoutX="472.0" layoutY="210.0" mnemonicParsing="false" onAction="#buttonStoreDeleteAction" text="DELETE" />
+                  <Button fx:id="buttonStoreSave" layoutX="82.0" layoutY="312.0" mnemonicParsing="false" onAction="#buttonStoreSaveAction" text="Сохранить в файл" />
+                  <Button fx:id="buttonStoreExtract" layoutX="228.0" layoutY="312.0" mnemonicParsing="false" onAction="#buttonStoreExtractAction" text="Загрузить из файла" />
+                  <TableView fx:id="tableViewStore" layoutX="14.0" layoutY="15.0" prefHeight="275.0" prefWidth="400.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnStoreName" prefWidth="200.0" text="Название" />
+                      <TableColumn fx:id="tableColumnStoreType" minWidth="0.0" prefWidth="199.0" text="Тип" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="buttonStoreSelectAll" layoutX="461.0" layoutY="70.0" mnemonicParsing="false" onAction="#buttonStoreSelectAllAction" text="SELECT ALL" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Поставщик">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="buttonProviderInsert" layoutX="472.0" layoutY="140.0" mnemonicParsing="false" onAction="#buttonProviderInsertAction" text="INSERT" />
+                  <Button fx:id="buttonProviderUpdate" layoutX="470.0" layoutY="175.0" mnemonicParsing="false" onAction="#buttonProviderUpdateAction" text="UPDATE" />
+                  <Button fx:id="buttonProviderDelete" layoutX="472.0" layoutY="210.0" mnemonicParsing="false" onAction="#buttonProviderDeleteAction" text="DELETE" />
+                  <Button fx:id="buttonProviderSave" layoutX="82.0" layoutY="312.0" mnemonicParsing="false" onAction="#buttonProviderSaveAction" text="Сохранить в файл" />
+                  <Button fx:id="buttonProviderExtract" layoutX="228.0" layoutY="312.0" mnemonicParsing="false" onAction="#buttonProviderExtractAction" text="Загрузить из файла" />
+                  <TableView fx:id="tableViewProvider" layoutX="14.0" layoutY="15.0" prefHeight="275.0" prefWidth="400.0">
+                     <columns>
+                        <TableColumn fx:id="tableColumnProviderType" prefWidth="200.0" text="Тип" />
+                        <TableColumn fx:id="tableColumnProviderProvider" minWidth="0.0" prefWidth="199.0" text="Поставщик" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="buttonProviderSelectAll" layoutX="461.0" layoutY="70.0" mnemonicParsing="false" onAction="#buttonProviderSelectAllAction" text="SELECT ALL" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Продавец">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="buttonSellerInsert" layoutX="472.0" layoutY="140.0" mnemonicParsing="false" onAction="#buttonSellerInsertAction" text="INSERT" />
+                  <Button fx:id="buttonSellerUpdate" layoutX="470.0" layoutY="175.0" mnemonicParsing="false" onAction="#buttonSellerUpdateAction" text="UPDATE" />
+                  <Button fx:id="buttonSellerDelete" layoutX="472.0" layoutY="210.0" mnemonicParsing="false" onAction="#buttonSellerDeleteAction" text="DELETE" />
+                  <Button fx:id="buttonSellerSave" layoutX="82.0" layoutY="312.0" mnemonicParsing="false" onAction="#buttonSellerSaveAction" text="Сохранить в файл" />
+                  <Button fx:id="buttonSellerExtract" layoutX="228.0" layoutY="312.0" mnemonicParsing="false" onAction="#buttonSellerExtractAction" text="Загрузить из файла" />
+                  <TableView fx:id="tableViewSeller" layoutX="14.0" layoutY="15.0" prefHeight="275.0" prefWidth="400.0">
+                     <columns>
+                        <TableColumn fx:id="tableColumnSellerName" prefWidth="75.0" text="Имя" />
+                        <TableColumn fx:id="tableColumnSellerCity" prefWidth="94.0" text="Город" />
+                        <TableColumn fx:id="tableColumnSellerTitle" prefWidth="76.0" text="Название" />
+                        <TableColumn fx:id="tableColumnSellerCost" prefWidth="64.0" text="Цена" />
+                        <TableColumn fx:id="tableColumnSellerQuantity" prefWidth="90.0" text="Количество" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="buttonSellerSelectAll" layoutX="461.0" layoutY="70.0" mnemonicParsing="false" onAction="#buttonSellerSelectAllAction" text="SELECT ALL" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Регистрация">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="buttonRegistryInsert" layoutX="472.0" layoutY="140.0" mnemonicParsing="false" onAction="#buttonRegistryInsertAction" text="INSERT" />
+                  <Button fx:id="buttonRegistryUpdate" layoutX="470.0" layoutY="175.0" mnemonicParsing="false" onAction="#buttonRegistryUpdateAction" text="UPDATE" />
+                  <Button fx:id="buttonRegistryDelete" layoutX="472.0" layoutY="210.0" mnemonicParsing="false" onAction="#buttonRegistryDeleteAction" text="DELETE" />
+                  <Button fx:id="buttonRegistrySave" layoutX="82.0" layoutY="312.0" mnemonicParsing="false" onAction="#buttonRegistrySaveAction" text="Сохранить в файл" />
+                  <Button fx:id="buttonRegistryExtract" layoutX="228.0" layoutY="312.0" mnemonicParsing="false" onAction="#buttonRegistryExtractAction" text="Загрузить из файла" />
+                  <TableView fx:id="tableViewRegistry" layoutX="14.0" layoutY="15.0" prefHeight="275.0" prefWidth="400.0">
+                     <columns>
+                        <TableColumn fx:id="tableColumnRegistryName" prefWidth="75.0" text="Имя" />
+                        <TableColumn fx:id="tableColumnRegistryRegistryDate" prefWidth="188.0" text="Дата регистрации" />
+                        <TableColumn fx:id="tableColumnRegistryPositionQuantity" minWidth="7.0" prefWidth="136.0" text="Кол-во позиций" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="buttonRegistrySelectAll" layoutX="461.0" layoutY="70.0" mnemonicParsing="false" onAction="#buttonRegistrySelectAllAction" text="SELECT ALL" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Инструмент SELECT">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="buttonSelect" layoutX="515.0" layoutY="31.0" mnemonicParsing="false" onAction="#buttonSelectAction" text="&gt;&gt;&gt;" />
+                  <TextField fx:id="textFieldSelect" layoutX="30.0" layoutY="31.0" prefHeight="25.0" prefWidth="456.0" />
+                  <TextArea fx:id="textAreaSelect" layoutX="30.0" layoutY="77.0" prefHeight="265.0" prefWidth="455.0" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
